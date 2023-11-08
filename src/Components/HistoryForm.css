@@ -1,0 +1,53 @@
+.history-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #79942B;
+    padding: 10px;
+    color: white;
+  }
+  
+  .Title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Histories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .history {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .mini-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }

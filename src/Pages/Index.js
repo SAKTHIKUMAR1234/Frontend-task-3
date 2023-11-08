@@ -15,7 +15,7 @@ const Index = () => {
       return;
     }
 
-    axios.get('http://localhost:8000/customer/getData/',{
+    axios.get('https://cd-15springbackend.onrender.com/customer/getData/',{
       headers:{
         "Authorization":'Bearer '+sessionStorage.getItem("AuthToken")
       }
@@ -25,7 +25,7 @@ const Index = () => {
       console.log(err)
       nav("/")
     });
-    axios.get('http://localhost:8000/customer/getProducts/',{
+    axios.get('https://cd-15springbackend.onrender.com/customer/getProducts/',{
       headers:{
         "Authorization":'Bearer '+sessionStorage.getItem("AuthToken")
       }

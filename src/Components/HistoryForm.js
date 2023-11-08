@@ -17,7 +17,7 @@ const HistoryForm = () => {
     }, [])
 
     const getHistory = () => {
-        axios.get(`http://localhost:8000/order/getHistory/`, {
+        axios.get(`https://cd-15springbackend.onrender.com/order/getHistory/`, {
             headers: {
                 "Authorization": 'Bearer ' + sessionStorage.getItem("AuthToken")
             }
@@ -52,7 +52,7 @@ const HistoryForm = () => {
                         {history.productsList.map((products, i) => (
                             <div className='mini-card' id={i}>
                                 <p>{products.name}</p>
-                                <img src={"http://localhost:8000/static/" + products.imageSrc} />
+                                <img src={"https://cd-15springbackend.onrender.com/static/" + products.imageSrc} />
                             </div>
                         ))}
                         <br></br>

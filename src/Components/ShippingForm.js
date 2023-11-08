@@ -11,7 +11,7 @@ const ShippingForm = () => {
 
 
   const handlePlaceOrder = () => {
-    axios.get("http://localhost:8000/order/placeOrder/"+shippingAddress, {
+    axios.get("https://cd-15springbackend.onrender.com/order/placeOrder/"+shippingAddress, {
       headers: {
         "Authorization": 'Bearer ' + sessionStorage.getItem("AuthToken")
       }

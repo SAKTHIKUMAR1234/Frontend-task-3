@@ -46,7 +46,7 @@ const SignupForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/auth/create/', formData);
+      const response = await axios.post('https://cd-15springbackend.onrender.com/auth/create/', formData);
       if (response.status === 200) {
         navigate('/login');
       }

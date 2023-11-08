@@ -26,7 +26,7 @@ const IndexForm = ({ user, products }) => {
   const addToCart = (productId) => {
 
 
-    axios.get(`http://localhost:8000/cart/add/${productId}`, {
+    axios.get(`https://cd-15springbackend.onrender.com/cart/add/${productId}`, {
       headers: {
         "Authorization": 'Bearer ' + sessionStorage.getItem("AuthToken")
       }
@@ -100,7 +100,7 @@ const IndexForm = ({ user, products }) => {
               <p>Price: Rupees {product.price}</p>
             </div>
             <div className="product-image">
-              <img src={"http://localhost:8000/static/" + product.imageSrc} alt={product.name} />
+              <img src={"https://cd-15springbackend.onrender.com/static/" + product.imageSrc} alt={product.name} />
             </div>
             <button onClick={() => addToCart(product.id)} className="add-to-cart-button">
               Add to Cart

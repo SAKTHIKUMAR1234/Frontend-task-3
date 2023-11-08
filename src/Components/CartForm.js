@@ -14,7 +14,7 @@ const CartForm = () => {
 
 
   const getCartProducts=async ()=>{
-    axios.get('http://localhost:8000/cart/getAllProducts/', {
+    axios.get('https://cd-15springbackend.onrender.com/cart/getAllProducts/', {
       headers: {
         "Authorization": 'Bearer ' + sessionStorage.getItem("AuthToken")
       }
@@ -25,7 +25,7 @@ const CartForm = () => {
 
 
   const handleRemove = (productId) => {
-    axios.get(`http://localhost:8000/cart/remove/${productId}`, {
+    axios.get(`https://cd-15springbackend.onrender.com/cart/remove/${productId}`, {
       headers: {
         "Authorization": 'Bearer ' + sessionStorage.getItem("AuthToken")
       }
@@ -87,7 +87,7 @@ const CartForm = () => {
       <div className="cart-products">
         {cartProducts.map((product) => (
           <div key={product.id} className="cart-product">
-            <img src={"http://localhost:8000/static/" + product.imageSrc} alt={product.name} />
+            <img src={"https://cd-15springbackend.onrender.com/static/" + product.imageSrc} alt={product.name} />
             <h3>{product.name}</h3>
             <p>Price:{product.price}</p>
             <p>{product.description}</p>
